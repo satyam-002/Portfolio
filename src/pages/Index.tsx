@@ -28,40 +28,40 @@ const IndexPage = () => {
 
   const skillsData = [
     {
-      title: 'Frontend Development',
-      skills: ['React.js', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Redux']
+      title: 'Full-Stack Development',
+      skills: ['React.js', 'Redux', 'Tailwind CSS', 'Node.js', 'NoSQL & SQL']
     },
     {
-      title: 'Backend Development',
-      skills: ['Node.js', 'Express', 'MongoDB', 'Firebase']
+      title: 'Data Analysis',
+      skills: ['Hadoop', 'R Programming', 'Tableau', 'Ms Excel', ]
     },
     {
       title: 'Tools & Others',
-      skills: ['Git', 'GitHub', 'Unity', 'Figma']
+      skills: ['Git', 'Docker', 'Jenkins', 'Selenium', 'Unreal(UE5)']
     }
   ];
 
   const projectsData = [
     {
-      title: 'Multi-Shooter-Game',
-      description: 'A game inspired buy BGMI TDM with multiplayer.',
-      technologies: ['Unity', 'Photon', 'Mixamo'],
-      imageUrl: '/pages/assets/multishooter game.jpg',
-      projectUrl: 'https://github.com/AJ-AYUSHMAN/Jio-games-project'
+      title: 'Chess Arena',
+      description: 'An all-in-one chess website for chess geeks.',
+      technologies: ['React.js', 'MongoDB', 'Docker-swarm'],
+      imageUrl: '/assets/P1.png', 
+      projectUrl: 'https://github.com/Satyam12217960/Project-01.git'
+    },  
+    {
+      title: 'Flappy Bird',
+      description: 'Inspired by original game and made from basics.',
+      technologies: ['Cpp'],
+      imageUrl: '/assets/P2.jpg',
+      projectUrl: 'https://github.com/Satyam12217960/Games.git'
     },
     {
-      title: 'Infinite Runner',
-      description: 'Endless Runner game build on Unity 3D.',
-      technologies: ['Unity', 'Mixamo'],
-      imageUrl: '/pages/assets/infinite.png',
-      projectUrl: 'https://github.com/AJ-AYUSHMAN/Infinite-Runner'
-    },
-    {
-      title: 'Target Shooter',
-      description: 'This game was build on unity 2D.',
-      technologies: ['Unity', 'Mixamo'],
-      imageUrl: '/pages/assets/Target.png',
-      projectUrl: 'https://github.com/AJ-AYUSHMAN/Target-shooting-Game'
+      title: 'Chat bot',
+      description: 'A website to access all chatbots at a place.',
+      technologies: ['Vite + React', 'MongoDB'],
+      imageUrl: '/assets/P3.png',
+      projectUrl: 'https://github.com/Satyam12217960/ChatBot.git'
     }
   ];
 
@@ -69,52 +69,41 @@ const IndexPage = () => {
     {
       institution: 'Lovely Professional University',
       degree: 'B.Tech in Computer Science',
-      period: '2022 - 2026',
-      description: 'Specialized in Game Development and UI'
+      period: '2022 - Present',
+      description: 'Percentile: 6.46'
     },
     {
       institution: 'Levana Public School',
       degree: '10th and 12th',
       period: '2018 - 2022',
-      description: 'Schooling'
+      description: 'Percentage: 88.6% | 80.2% '
     }
   ];
 
   const timelineData = [
     {
-      date: '2024',
-      title: 'Google Arcade Advanced Milstone',
-      description: 'Participated in Google Arcade programme and achieved the Advanced milstone.',
+      date: 'June-July 2024',
+      title: 'Ranked among Top 100 in LPU',
+      description: 'Ranked among Top 100 for Summer Competetive Batch.',
     },
     {
-      date: '2024',
-      title: 'Google DevFest',
-      description: 'Secured 4th place among 5 in quiz.',
-    },
-    {
-      date: '2024',
-      title: 'Gssoc Contribution',
-      description: 'Contributed in Gssoc ext. 2024 and got 619th rank.',
+      date: 'June 2025',
+      title: 'Secured an internship ',
+      description: 'In-Progress.',
     }
   ];
 
   const certificationsData = [
     {
-      title: "Introduction to MERN",
-      issuer: "Programming Pathsala",
-      date: "Febuary 2025",
-      credentialUrl: "#"
-    },
-    {
       title: "Cloud Computing",
       issuer: "NPTEL",
-      date: "November 2024",
+      date: "July - November' 2024",
       credentialUrl: "#"
     },
     {
-      title: "Game Development in Unity with C#",
-      issuer: "CipherSchools",
-      date: "July 2024",
+      title: "MongoDB",
+      issuer: "Atlas",
+      date: "June - July' 2024",
       credentialUrl: "#"
     }
   ];
@@ -135,7 +124,7 @@ const IndexPage = () => {
               transition={{ duration: 0.5 }}
               className="text-4xl font-bold text-gradient mb-4"
             >
-              Ayushman Raj
+              Satyam Raj
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
@@ -143,7 +132,7 @@ const IndexPage = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl text-muted-foreground"
             >
-              Game Developer
+              Developer
             </motion.div>
           </motion.div>
         ) : (
@@ -162,11 +151,11 @@ const IndexPage = () => {
                     transition={{ duration: 0.6 }}
                   >
                     <h1 className="heading-xl mb-4">
-                      Hi, I'm <span className="text-gradient">Ayushman Raj</span>
+                      Hi, I'm <span className="text-gradient">Satyam Raj</span>
                     </h1>
                     <JobTitle />
                     <p className="max-w-2xl mb-12 text-lg">
-                      I make games for fun.
+                    I am passionate about learning new things.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4">
                       <Button
@@ -200,8 +189,8 @@ const IndexPage = () => {
                 >
                   <div className="relative w-72 h-72 mx-auto">
                     <img
-                      src="/src/pages/assets/ayushmanpic3.jpg"
-                      alt="Ayushman Raj"
+                      src="/assets/I1.jpg"
+                      alt="Satyam Raj"
                       className="rounded-full w-full h-full object-cover shadow-xl"
                     />
                     <div className="absolute inset-0 rounded-full glass opacity-20"></div>
@@ -237,20 +226,15 @@ const IndexPage = () => {
                   className="glass-card p-8 rounded-xl"
                 >
                   <p className="text-lg mb-4">
-                    I am a passionate Game Developer with a focus on creating elegant, 
-                    efficientGames. With 1+ years of experience in 
-                    the field, I have developed a strong understanding of both frontend and 
-                    backend technologies.
+                    I am a dedicated Game Developer with a strong passion for building games from the ground up. I enjoy exploring the technical depths of game mechanics, algorithms, and AI to create unique and meaningful experiences. 
                   </p>
                   <p className="text-lg mb-4">
-                    My journey in game development began during college, where I discovered 
-                    my love for making games. Since then, I've worked on a variety of projects ranging 
-                    from small games to complex games.
+                    My journey in game development started in college, where I discovered the thrill of creating complete games by myself—coding every functionality rather than relying on pre-built tools. This hands-on approach not only sharpened my problem-solving skills but also deepened my love for development.
                   </p>
                   <p className="text-lg">
-                    I believe in writing clean, maintainable code and constantly strive to 
-                    learn new technologies and methodologies to enhance my skill set.
+                    I’m committed to writing clean, efficient code and continuously learning new concepts—especially when they help me bring innovative ideas to life. Whether it’s mastering data structures, implementing AI, or designing new systems, I always invest myself fully into what I love.
                   </p>
+
                 </motion.div>
                 <motion.div
                   initial={{ opacity: 0, x: 30 }}
@@ -260,14 +244,10 @@ const IndexPage = () => {
                 >
                   <div className="glass p-2 rounded-xl">
                     <img 
-                      src="/src/pages/assets/ayushmanpic3.jpg" 
-                      alt="Ayushman Raj" 
+                      src="/assets/I2.png" 
+                      alt="Satyam Raj" 
                       className="rounded-lg w-full h-auto" 
                     />
-                  </div>
-                  <div className="absolute -bottom-4 -right-4 glass-card p-4 rounded-lg w-48">
-                    <p className="font-bold">1+ Years Experience</p>
-                    <p className="text-sm text-muted-foreground">Game Development</p>
                   </div>
                 </motion.div>
               </div>

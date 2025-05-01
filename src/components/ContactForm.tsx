@@ -53,14 +53,14 @@ const ContactForm = () => {
         <div className="flex flex-col space-y-4">
           <div className="flex items-center space-x-4">
             <Mail className="text-primary" />
-            <span>ayushman.raj@lpu.in</span>
+            <span>satyamraj86978@gmail.com</span>
           </div>
           
           <div className="flex space-x-4 mt-6">
-            <a href="https://github.com/AJ-AYUSHMAN" target="_blank" rel="noopener noreferrer" className="glass p-3 rounded-full hover:bg-primary/20 transition-colors">
+            <a href="https://github.com/Satyam12217960" target="_blank" rel="noopener noreferrer" className="glass p-3 rounded-full hover:bg-primary/20 transition-colors">
               <Github size={20} />
             </a>
-            <a href="https://linkedin.com/in/ayushman-raj" target="_blank" rel="noopener noreferrer" className="glass p-3 rounded-full hover:bg-primary/20 transition-colors">
+            <a href="https://www.linkedin.com/in/-satyamraj/" target="_blank" rel="noopener noreferrer" className="glass p-3 rounded-full hover:bg-primary/20 transition-colors">
               <Linkedin size={20} />
             </a>
           </div>

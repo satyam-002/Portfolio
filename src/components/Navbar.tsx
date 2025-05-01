@@ -44,7 +44,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <a href="#home" className="text-2xl font-bold text-gradient">
-          Ayushman
+          Satyam
         </a>
 
         {/* Desktop Navigation */}
