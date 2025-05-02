@@ -226,7 +226,7 @@ const IndexPage = () => {
                   className="glass-card p-8 rounded-xl"
                 >
                   <p className="text-lg mb-4">
-                  I'm a B.Tech CSE student specializing in Data Analysis, DevOps, and Game Development. Passionate about building innovative systems, I enjoy combining logic with creativity to solve real-world problems and craft engaging digital experiences. 
+                  I'm a B.Tech CSE student specializing in Competitive Coding, Data Analysis, DevOps, and Game Development. Passionate about building innovative systems, I enjoy combining logic with creativity to solve real-world problems and craft engaging digital experiences. 
                   </p>
                   <p className="text-lg mb-4">
                   I began my coding journey in the first semester with Python, and quickly fell in love with programming. Driven by curiosity, I went on to explore C, C++, Competitive coding, DevOps, Data analysis, and Game development as personal interests—enjoying every step of the way. This self-driven path has shaped my passion for building and solving through code.
