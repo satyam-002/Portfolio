@@ -36,7 +36,7 @@ const IndexPage = () => {
       skills: ['Hadoop', 'R Programming', 'Tableau', 'Ms Excel', ]
     },
     {
-      title: 'Tools & Others',
+      title: 'DevOps and Tools',
       skills: ['Git', 'Docker', 'Jenkins', 'Selenium', 'Unreal(UE5)']
     }
   ];
@@ -226,13 +226,13 @@ const IndexPage = () => {
                   className="glass-card p-8 rounded-xl"
                 >
                   <p className="text-lg mb-4">
-                    I am a dedicated Game Developer with a strong passion for building games from the ground up. I enjoy exploring the technical depths of game mechanics, algorithms, and AI to create unique and meaningful experiences. 
+                  I'm a B.Tech CSE student specializing in Data Analysis, DevOps, and Game Development. Passionate about building innovative systems, I enjoy combining logic with creativity to solve real-world problems and craft engaging digital experiences. 
                   </p>
                   <p className="text-lg mb-4">
-                    My journey in game development started in college, where I discovered the thrill of creating complete games by myself—coding every functionality rather than relying on pre-built tools. This hands-on approach not only sharpened my problem-solving skills but also deepened my love for development.
+                  I began my coding journey in the first semester with Python, and quickly fell in love with programming. Driven by curiosity, I went on to explore C, C++, Competitive coding, DevOps, Data analysis, and Game development as personal interests—enjoying every step of the way. This self-driven path has shaped my passion for building and solving through code.
                   </p>
                   <p className="text-lg">
-                    I’m committed to writing clean, efficient code and continuously learning new concepts—especially when they help me bring innovative ideas to life. Whether it’s mastering data structures, implementing AI, or designing new systems, I always invest myself fully into what I love.
+                  My journey so far has been driven by a genuine passion for learning and creating. As I continue exploring more technologies, I aim to deepen my expertise and work on innovative projects that challenge me to grow as both a developer and a problem-solver.
                   </p>
 
                 </motion.div>
