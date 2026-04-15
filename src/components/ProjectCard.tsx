@@ -23,15 +23,13 @@ const ProjectCard = ({
   const [imgError, setImgError] = useState(false);
   
   const handleImageError = () => {
-    // If the image fails to load, try with a relative path without the "/src" prefix
     if (imgSrc === imageUrl && imageUrl.startsWith('/src')) {
-      const newPath = imageUrl.substring(4); // Remove '/src' from the beginning
+      const newPath = imageUrl.substring(4); 
       console.log(`Trying alternative path: ${newPath}`);
       setImgSrc(newPath);
       return;
     }
     
-    // If that also fails, use the placeholder
     console.error(`Failed to load image: ${imgSrc}`);
     setImgSrc('/placeholder.svg');
     setImgError(true);

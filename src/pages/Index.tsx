@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -28,40 +27,52 @@ const IndexPage = () => {
 
   const skillsData = [
     {
-      title: 'Full-Stack Development',
-      skills: ['React.js', 'Redux', 'Tailwind CSS', 'Node.js', 'NoSQL & SQL']
+      title: 'Cloud & Infrastructure',
+      skills: ['AWS (EC2, S3, IAM, VPC, EKS)', 'Linux (Ubuntu)', 'Windows']
     },
     {
-      title: 'Data Analysis',
-      skills: ['Hadoop', 'R Programming', 'Tableau', 'Ms Excel', ]
+      title: 'Containerization & Orchestration',
+      skills: ['Docker', 'Docker Compose', 'Kubernetes (Minikube)', 'Nginx Ingress']
     },
     {
-      title: 'DevOps and Tools',
-      skills: ['Git', 'Docker', 'Jenkins', 'Selenium', 'Unreal(UE5)']
+      title: 'CI/CD & Automation',
+      skills: ['Jenkins', 'GitHub Actions (Basic)', 'Git', 'GitHub']
+    },
+    {
+      title: 'Monitoring & Observability',
+      skills: ['Prometheus', 'Grafana']
+    },
+    {
+      title: 'Infrastructure as Code',
+      skills: ['Terraform (Basic)', 'Ansible (Basic)', 'YAML']
+    },
+    {
+      title: 'Scripting & Networking',
+      skills: ['Bash (Basic)', 'Python (Basic)', 'Networking Fundamentals', 'Load Balancing']
     }
   ];
 
   const projectsData = [
     {
-      title: 'Chess Arena',
-      description: 'An all-in-one chess website for chess geeks.',
-      technologies: ['React.js', 'MongoDB', 'Docker-swarm'],
-      imageUrl: '/assets/P1.png', 
-      projectUrl: 'https://github.com/Satyam12217960/Project-01.git'
-    },  
-    {
-      title: 'Flappy Bird',
-      description: 'Inspired by original game and made from basics.',
-      technologies: ['Cpp'],
-      imageUrl: '/assets/P2.jpg',
-      projectUrl: 'https://github.com/Satyam12217960/Games.git'
+      title: 'Cloud-Native Monitoring & Deployment (AWS EKS)',
+      description: 'Deployed Kubernetes workloads on AWS EKS with Prometheus & Grafana for real-time monitoring and observability.',
+      technologies: ['AWS (EKS, EC2, IAM)', 'Kubernetes', 'Docker', 'Prometheus', 'Grafana', 'Linux'],
+      imageUrl: '/assets/P1.jpg',
+      projectUrl: 'https://github.com/satyam-002'
     },
     {
-      title: 'Chat bot',
-      description: 'A website to access all chatbots at a place.',
-      technologies: ['Vite + React', 'MongoDB'],
-      imageUrl: '/assets/P3.png',
-      projectUrl: 'https://github.com/Satyam12217960/ChatBot.git'
+      title: 'Scalable Kubernetes Deployment',
+      description: 'Deployed a multi-tier application using Kubernetes with Ingress, persistent storage, and zero-downtime updates.',
+      technologies: ['Kubernetes', 'Docker', 'Minikube', 'Nginx Ingress', 'YAML', 'Linux'],
+      imageUrl: '/assets/P2.jpg',
+      projectUrl: 'https://github.com/satyam-002'
+    },
+    {
+      title: 'CI/CD Pipeline for Containerized App',
+      description: 'Built a Jenkins CI/CD pipeline integrating GitHub webhooks for automated build, test, and deployment workflows.',
+      technologies: ['Jenkins', 'Docker', 'GitHub', 'Git', 'Linux'],
+      imageUrl: '/assets/P3.jpg',
+      projectUrl: 'https://github.com/satyam-002'
     }
   ];
 
@@ -70,7 +81,7 @@ const IndexPage = () => {
       institution: 'Lovely Professional University',
       degree: 'B.Tech in Computer Science',
       period: '2022 - Present',
-      description: 'Percentile: 6.46'
+      description: 'CGPA: 7.05'
     },
     {
       institution: 'Levana Public School',
@@ -88,12 +99,23 @@ const IndexPage = () => {
     },
     {
       date: 'June 2025',
-      title: 'Secured an internship ',
-      description: 'In-Progress.',
+      title: 'HackFest 2025 – Regional Round Participant',
+      description: 'Selected through screening and advanced to the regional round, where we developed and presented a functional prototype as part of a 4-member team.'
+    },
+    {
+      date: 'October 2025',
+      title: 'Received Offer Letter in First Interview',
+      description: 'Received an offer letter from CodeYoung with a package of 9.74 LPA.',
     }
   ];
 
   const certificationsData = [
+    {
+      title: "Cloud Practioner",
+      issuer: "AWS",
+      date: "May' 2026",
+      credentialUrl: "#"
+    },
     {
       title: "Cloud Computing",
       issuer: "NPTEL",
@@ -173,7 +195,7 @@ const IndexPage = () => {
                         variant="outline"
                         className="group"
                       >
-                        <a href="/src/pages/assets/resume.pdf" download="ayushman_raj_resume.pdf" className="flex items-center gap-2">
+                        <a href="https://drive.google.com/file/d/1eX2pvgdGQ1JzSVZAX9jCGUfRBmHMcFME/view?usp=drive_link" download className="flex items-center gap-2">
                           Download Resume
                           <Download size={16} className="transition-transform group-hover:-translate-y-1" />
                         </a>
@@ -189,7 +211,7 @@ const IndexPage = () => {
                 >
                   <div className="relative w-72 h-72 mx-auto">
                     <img
-                      src="/assets/I1.jpg"
+                      src="./assets/I1.png"
                       alt="Satyam Raj"
                       className="rounded-full w-full h-full object-cover shadow-xl"
                     />
@@ -213,62 +235,85 @@ const IndexPage = () => {
               </motion.div>
             </section>
 
-            <AnimatedSection id="about" className="container">
-              <SectionTitle 
-                title="About Me" 
-                subtitle="Here's a brief introduction about myself and my journey as a developer."
-              />
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <motion.div
-                  initial={{ opacity: 0, x: -30 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: 0.2 }}
-                  className="glass-card p-8 rounded-xl"
-                >
-                  <p className="text-lg mb-4">
-                  I'm a B.Tech CSE student specializing in Competitive Coding, Data Analysis, DevOps, and Game Development. Passionate about building innovative systems, I enjoy combining logic with creativity to solve real-world problems and craft engaging digital experiences. 
-                  </p>
-                  <p className="text-lg mb-4">
-                  I began my coding journey in the first semester with Python, and quickly fell in love with programming. Driven by curiosity, I went on to explore C, C++, Competitive coding, DevOps, Data analysis, and Game development as personal interests—enjoying every step of the way. This self-driven path has shaped my passion for building and solving through code.
-                  </p>
-                  <p className="text-lg">
-                  My journey so far has been driven by a genuine passion for learning and creating. As I continue exploring more technologies, I aim to deepen my expertise and work on innovative projects that challenge me to grow as both a developer and a problem-solver.
-                  </p>
+           <AnimatedSection id="about" className="container">
+  <SectionTitle 
+    title="About Me" 
+    subtitle="Here's a brief introduction about myself and my journey as a developer."
+  />
 
-                </motion.div>
-                <motion.div
-                  initial={{ opacity: 0, x: 30 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: 0.4 }}
-                  className="relative"
-                >
-                  <div className="glass p-2 rounded-xl">
-                    <img 
-                      src="/assets/I2.png" 
-                      alt="Satyam Raj" 
-                      className="rounded-lg w-full h-auto" 
-                    />
-                  </div>
-                </motion.div>
-              </div>
-            </AnimatedSection>
+  <div className="flex justify-center">
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.2 }}
+      className="glass-card p-8 rounded-xl max-w-5xl w-full"
+    >
+      {/* 🚀 My Journey */}
+      <h1 className="text-3xl font-bold mb-6 text-center flex items-center justify-center gap-2">
+        <span>🚀</span> My Journey
+      </h1>
 
-            <AnimatedSection id="skills" className="container bg-primary/5">
-              <SectionTitle 
-                title="My Skills" 
-                subtitle="Here are the technologies and tools I'm proficient with."
-              />
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {skillsData.map((skillCategory, index) => (
-                  <SkillCard 
-                    key={index}
-                    title={skillCategory.title}
-                    skills={skillCategory.skills}
-                    index={index}
-                  />
-                ))}
-              </div>
-            </AnimatedSection>
+      <p className="text-lg leading-relaxed text-gray-700">
+        I started my journey in tech with one simple goal — to build things from scratch and truly understand how they work.
+        <br /><br />
+        Instead of limiting myself to a single domain, I explored areas like C++, Python, web development, cloud computing, and data tools. This phase was driven by curiosity and experimentation — figuring out what genuinely interested me.
+        <br /><br />
+        A key turning point was building games using C++, where I developed systems from the ground up. It shaped my problem-solving approach — breaking complex systems into smaller, manageable parts.
+        <br /><br />
+        Over time, I realized I enjoy not just building applications, but also understanding how they run, scale, and operate in real environments.
+        <br /><br />
+        That realization led me to DevOps — where I now focus on building, monitoring, and managing systems end-to-end.
+      </p>
+
+      {/* ⚙️ What I’ve Been Doing */}
+      <h1 className="text-3xl font-semibold mt-10 mb-4 text-center flex items-center justify-center gap-2">
+        <span>⚙️</span> What I’ve Been Doing
+      </h1>
+
+      <p className="text-lg leading-relaxed text-gray-700">
+        I started focusing on DevOps by working hands-on with real tools and workflows instead of just theory.
+        <br /><br />
+        I’ve built and experimented with:
+        <br />
+        • Containerization using Docker <br />
+        • Container orchestration with Kubernetes (Minikube) <br />
+        • Monitoring systems using Prometheus & Grafana <br />
+        • Version control and collaboration using Git & GitHub <br />
+        • Deploying and managing applications in controlled environments
+        <br /><br />
+        Rather than following tutorials blindly, I prefer setting up systems myself, breaking them, and fixing them — because that’s where real learning happens.
+      </p>
+
+      {/* 🎯 Current Focus */}
+      <h1 className="text-3xl font-semibold mt-10 mb-4 text-center flex items-center justify-center gap-2">
+        <span>🎯</span> Current Focus
+      </h1>
+
+      <p className="text-lg leading-relaxed text-gray-700">
+        Right now, I am focused on strengthening my DevOps skills by:
+        <br />
+        • Building end-to-end projects that simulate real-world workflows <br />
+        • Improving my understanding of system design and infrastructure <br />
+        • Creating a portfolio that reflects practical implementation, not just knowledge
+      </p>
+
+      {/* 🔍 Looking Ahead */}
+      <h1 className="text-3xl font-semibold mt-10 mb-4 text-center flex items-center justify-center gap-2">
+        <span>🔍</span> Looking Ahead
+      </h1>
+
+      <p className="text-lg leading-relaxed text-gray-700">
+        My goal is to become someone who can:
+        <br />
+        • Build systems from scratch <br />
+        • Automate and optimize workflows <br />
+        • Bridge the gap between development and operations
+        <br /><br />
+        I am still exploring, still learning — but now with a clear direction.
+      </p>
+    </motion.div>
+  </div>
+</AnimatedSection>
 
             <AnimatedSection id="projects" className="container">
               <SectionTitle 
